@@ -12,18 +12,12 @@ const PROJECTS = [
   // add future projects here: { title, description, tags, url, image }
 ];
 
-// ---------------------------------------------------------
-// Skills
-// ---------------------------------------------------------
 const SKILLS = {
   languages: ["Java", "HTML", "JavaScript", "Python"],
   focus: ["Minecraft plugin development"],
   tools: ["IntelliJ IDEA"]
 };
 
-// ---------------------------------------------------------
-// Hero terminal typed text
-// ---------------------------------------------------------
 const INTRO_LINES = [
   { type: "prompt", text: "whoami" },
   { type: "output", text: "d4nymr, Java Developer" },
