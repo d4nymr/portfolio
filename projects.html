@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — d4nymr</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap tabbar">
+    <span class="tab logo">~/d4nymr</span>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">menu</button>
+    <ul id="navLinks" class="tabs">
+      <li><a class="tab" href="index.html#about">about.js</a></li>
+      <li><a class="tab active" href="projects.html">projects.js</a></li>
+      <li><a class="tab" href="index.html#skills">skills.json</a></li>
+      <li><a class="tab" href="index.html#contact">contact.sh</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="projects-page" style="border-top:none;">
+    <h2><span class="comment">//</span> projects.js</h2>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- generated via JS, see PROJECTS array in script.js -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span class="prompt">$</span> echo "&copy; <span id="year"></span> d4nymr"<span class="cursor">▌</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

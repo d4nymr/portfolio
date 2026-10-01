@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>d4nymr — portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap tabbar">
+    <span class="tab logo">~/d4nymr</span>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">menu</button>
+    <ul id="navLinks" class="tabs">
+      <li><a class="tab" href="#about" data-section="about">about.js</a></li>
+      <li><a class="tab" href="projects.html">projects.js</a></li>
+      <li><a class="tab" href="#skills" data-section="skills">skills.json</a></li>
+      <li><a class="tab" href="#contact" data-section="contact">contact.sh</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="border-top:none;">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">bash — intro.sh</span>
+      </div>
+      <div class="terminal-body" id="terminalBody" aria-live="polite"></div>
+    </div>
+    <div class="links">
+      <a class="btn primary" href="projects.html">./view-projects</a>
+      <a class="btn ghost" href="#contact">./contact-me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2><span class="comment">//</span> about.js</h2>
+    <pre class="code-block"><code><span class="kw">const</span> <span class="var">aboutMe</span> = {
+  <span class="key">name</span>: <span class="str">"Daniele (d4nymr)"</span>,
+  <span class="key">role</span>: <span class="str">"Java Developer"</span>,
+  <span class="key">stack</span>: [<span class="str">"Java"</span>, <span class="str">"IntelliJ IDEA"</span>, <span class="str">"Spigot/Paper API"</span>],
+  <span class="key">bio</span>: <span class="str">"I started coding out of pure curiosity, with no formal path, and never really stopped. Project after project I built solid skills in Java, learning by shipping real things rather than following tutorials, and I'm now expanding into HTML, JavaScript and Python."</span>,
+  <span class="key">basedIn</span>: <span class="str">"Italy"</span>,
+};</code></pre>
+  </section>
+
+  <section id="skills">
+    <h2><span class="comment">//</span> skills.json</h2>
+    <div class="skills-json" id="skillsJson">
+      <!-- generated via JS, see SKILLS object in script.js -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><span class="comment">//</span> contact.sh</h2>
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">bash — contact.sh</span>
+      </div>
+      <div class="terminal-body contact-body">
+        <p><span class="prompt">$</span> cat email.txt</p>
+        <p class="output"><a href="mailto:d4nymr@gmail.com">d4nymr@gmail.com</a></p>
+        <p><span class="prompt">$</span> open github</p>
+        <p class="output"><a href="https://github.com/d4nymr" target="_blank" rel="noopener">github.com/d4nymr</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span class="prompt">$</span> echo "&copy; <span id="year"></span> d4nymr"<span class="cursor">▌</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
